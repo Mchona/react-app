@@ -1,8 +1,9 @@
-import { Center, Icon, Button } from '@chakra-ui/react'
+import { Center, Icon, Button,  Box, Avatar } from '@chakra-ui/react'
 
 
 
 const Chakraui = () => {
+
 
   return (
     <div>
@@ -18,7 +19,11 @@ const Chakraui = () => {
       </Icon>
 
       <Icon />
-       <Button colorScheme='blue'>ChakraButton</Button>
+      <Button colorScheme='blue'>ChakraButton</Button>
+
+      <Box>
+        <Avatar size="xl" name="John Doe" src="/logo512.png" />
+      </Box>
     </div>
   );
 };
