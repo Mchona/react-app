@@ -1,4 +1,4 @@
-import { Center, Icon, Button,  Box, Avatar } from '@chakra-ui/react'
+import { Center, Icon, Button, Box, Avatar, Flex } from '@chakra-ui/react'
 
 
 
@@ -11,19 +11,22 @@ const Chakraui = () => {
         This is the Center
       </Center>
 
-      <Icon viewBox='0 0 200 200' color='red.500'>
-        <path
-          fill='currentColor'
-          d='M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0'
-        />
-      </Icon>
+      <Flex>
+        <Icon viewBox='0 0 200 200' color='red.500'>
+          <path
+            fill='currentColor'
+            d='M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0'
+          />
+        </Icon>
 
-      <Icon />
-      <Button colorScheme='blue'>ChakraButton</Button>
+        <Icon />
+        <Button colorScheme='blue'>ChakraButton</Button>
 
-      <Box>
-        <Avatar size="xl" name="John Doe" src="/logo512.png" />
-      </Box>
+        <Box>
+          <Avatar size="xl" name="John Doe" src="/logo512.png" />
+        </Box>
+      </Flex>
+
     </div>
   );
 };
