@@ -1,8 +1,12 @@
-import React from 'react'
+import Child from "./Child"
 
 const Props = () => {
   return (
-    <h2>this is props</h2>
+    <body>
+      <h2>this is props</h2>
+      <Child num={123} />
+    </body>
+
   )
 }
 
